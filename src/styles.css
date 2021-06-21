@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:lightgray;
+}
+
+.bgsetting{
+    background-color: skyblue;
+    border-style: solid;
+    border-color: blue;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin-left: 30%;
+}
+
