@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   private url: string="http://localhost:9089/login";
   public userLogin: UserLogin= new UserLogin();
-  public dataa:any;
+  public data:any;
   constructor(private http: HttpClient) { }
 
 
@@ -24,13 +24,12 @@ export class LoginComponent implements OnInit {
     console.log(this.userLogin.email,"---",this.userLogin.password);
     this.http.post(this.url,this.userLogin)
     .subscribe((resData)=>{
-    this.dataa = resData
- })
-
- 
+    this.data = resData
   
+ })
+ console.log(this.data)
  
-    
+ alert("Logged In");
   }
 
   ngOnInit(): void {
